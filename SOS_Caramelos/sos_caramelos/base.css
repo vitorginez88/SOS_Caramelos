@@ -1,0 +1,222 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}
+
+
+/* HEADER */
+header {
+    width: 100%;
+    padding: 15px 40px;
+}
+
+/* NAV */
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOGO */
+.cabecalho img {
+    width: 90px;
+}
+
+/* MENU PRINCIPAL */
+.cabecalho ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.cabecalho ul li {
+    position: relative;
+}
+
+.cabecalho ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+/* HOVER NOS ITENS PRINCIPAIS */
+.cabecalho ul li:hover > a {
+    background-color: #F9CB58;
+}
+
+/* ============================
+     SUBMENU FUNCIONAL
+============================ */
+.cabecalho ul li ul {
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0;
+    width: 200px;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    background: rgba(255, 255, 255, 0.4); /* transparente */
+    backdrop-filter: blur(4px);
+
+    padding: 8px 0;
+    border-radius: 6px;
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.25);
+
+    transition: opacity .20s ease-in-out;
+    z-index: 1000;
+}
+
+/* MOSTRAR SUBMENU AO PASSAR O CURSOR */
+.cabecalho ul li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+/* ============================
+    AJUSTES DO SUBMENU (Novo)
+============================ */
+
+.cabecalho ul li ul.submenu {
+    width: 210px;
+    padding: 6px 0;
+
+    /* ESSENCIAL – impede que os itens fiquem lado a lado */
+    display: block;
+}
+
+.cabecalho ul li ul.submenu li {
+    display: block;   /* cada item ocupa 100% da largura */
+}
+
+.cabecalho ul li ul.submenu li a {
+    font-size: 14px;
+    line-height: 1.2;
+    display: block;     /* garante que fique em coluna */
+    width: 100%;        /* ocupa toda a caixa */
+    padding: 10px 12px;
+    white-space: normal; /* quebra linha para textos longos */
+}
+
+/* HOVER NAS OPÇÕES DO SUBMENU */
+.cabecalho ul li ul li a:hover {
+    background-color: #F9CB58;
+}
+
+/* ============ BOTÃO ANUNCIE ============ */
+.cabecalho button {
+    background: #F9CB58;
+    border: 2px solid #000;
+    padding: 10px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out;
+    font-size: 16px;
+}
+
+.cabecalho button:hover {
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.35);
+}
+
+.cabecalho button a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+/*FOOTER*/
+.footer {
+    padding: 40px 20px;
+    border-top: 1px solid #d9d9d9;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.footer-col h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-col a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+.footer-col img {
+    width: 28px;
+    height: 28px;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    column-count: 2; /* divide em duas colunas como no wireframe */
+    column-gap: 40px;
+}
+
+.menu-footer li {
+    margin-bottom: 8px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-links span {
+    color: #000;
+}
+
+
+
+
+

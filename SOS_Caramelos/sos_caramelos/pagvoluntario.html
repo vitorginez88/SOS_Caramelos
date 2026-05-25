@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="img/favicon-192x192.png" sizes="192x192" type="image/png">
+    <link rel="icon" href="img/favicon-512x512.png" sizes="512x512" type="image/png">
+
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Seja voluntário</title>
+</head>
+<body>
+    <header>
+        <nav class="cabecalho">
+            <img src="img-conteudo/SOSCaramelo logo.jpg" alt="">
+          <ul type="none">
+                <li><a href="paginainicial.html">Home</a></li>
+                <li><a href="pageventos.html">Eventos</a></li>
+                <li><a href="pagvoluntario.html">Seja voluntário</a></li>
+            
+
+                <li>
+                <a href="pagadocao.html">Adoção</a>
+                    <ul class="submenu">
+                        <li><a href="pagadocao.html">Pets para adoção</a></li>
+                        <li><a href="pagcomofunciona.html">Pets adotados</a></li>
+                        <li><a href="pagcomofunciona.html">Como funciona a adoção</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button><a href="paganuncie.html">Anuncie</a></button>
+        </nav>
+    </header>
+
+    <main id="main" >
+        <section id="ajude" >
+            <h1>Seja parte da nossa equipe de voluntários</h1>
+            <button id="bota">QUERO SER VOLUNTÁRIO</button>
+        </section>
+<div >
+        <section id="porquee"> 
+            <h1 class="titulo">POR QUE SER VOLUNTÁRIO?</h1>
+            
+                <h2>Contribuir com a proteção animal significa ajudar animais resgatados, apoiar seu bem-estar e os cuidados <br>
+                    necessários, além de participar ativamente da causa. É também uma oportunidade de aprender <br>
+                    mais sobre a realidade desses pets e de colaborar com ações concretas que fazem diferença em suas vidas.</h2>
+            <img id="voluntário" src="vonlun" alt="">
+        </section>
+         
+        <br>
+
+        <section id="atuacao">
+           
+            <h1>ÁREAS DE ATUAÇÃO DO VOLUNTÁRIO:</h1>
+            
+            <div>
+            <div><img src="img-conteudo/cuidado.jpeg" alt="" width="300px"><br> <h2>
+            Cuidado com os animais </h2></div><br>
+            <div><img src="img-conteudo/passeio.jpeg" alt="" width="200px"><br> <h2>
+            Passeios e socialização </h2> </div><br>
+            <div ><img src="img-conteudo/evento.jpg" alt="" width="300px"><br> <h2>
+            Apoio em eventos </h2> </div><br>
+            <div><img src="img-conteudo/divulgação.jpg" alt="" width="300px"><br> <h2>
+            Divulgação / Fotos</h2>  </div>
+           
+        </div>
+        
+        </section>
+        </div>
+<br>
+        <section id="form">
+            <h1 class="titulo">CADASTRO DE VOLUNTÁRIO</h1>
+            <h2>Preencha o formulário abaixo e faça parte da nossa equipe!</h2>
+                <br>
+                <form  method="post" action="grava.jsp">
+                    <fieldset>
+                    <label for="nome">Seu nome completo *</label> <br>
+                    <input type="text" id="nome" name="nome">
+                    <span id="erronome"></span> <br> <br>
+
+                    <label for="txtidade">Idade * </label> <br>
+                    <input type="text" id="txtidade" name="txtidade">
+                    <span id="erroidade"></span> <br> <br>
+            
+                    <label for="txtemail">Email * </label> <br>
+                    <input type="text" id="txtemail" name="txtemail">
+                    <span id="erroemail"></span> <br> <br>
+
+                    <label for="telefone">Telefone * </label> <br>
+                    <input type="text" id="telefone" name="telefone">
+                    <span id="errotelefone"></span> <br> <br>
+
+                    <label for="cidade">Cidade * </label> <br>
+                    <input type="text" id="cidade" name="cidade">
+                    <span id="errocidade"></span> <br> <br>
+                    
+                    <label for="area">Área de interesse * </label> <br>
+                    <select id="area" name="area">
+                        <option value="resgate">Resgate</option>
+                        <option value="lar">Lar temporário</option>
+                        <option value="cuidados">Cuidados diários</option>
+                        <option value="eventos">Eventos de adoção</option>
+                        <option value="marketing">Marketing e redes sociais</option>
+                    </select>
+                    <span id="erroarea"></span> <br> <br>
+
+                    <label for="disponibilidade">Disponibilidade * </label> <br>
+                    <select name="disponibilidade" id="disponibilidade">
+                        <option value="fds">Final de semana</option>
+                        <option value="dia">Ocasional / Fixa</option>
+                        <option value="noite">Noturna</option>
+                    </select>
+                    <span id="errodisponibilidade"></span> <br> <br>
+
+                    <label for="experiencia">Você tem experiência com animais? *</label> <br>
+                    <select name="experiencia" id="experiencia">
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
+                    <span id="erroexperiencia"></span> <br> <br>
+
+                    <label for="mensagem">Conte-nos um pouco sobre você e por que quer ser voluntário </label> <br>
+                    <textarea name="mensagem" id="mensagem"></textarea>
+                    <span id="erromensagem"></span> <br> <br>
+
+                    <button id="botão" type="submit">ENVIAR CADASTRO</button>
+                    <p>*Campos obrigatórios</p>
+                   </fieldset>
+           </form>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h3>Nos acompanhe</h3>
+            <a target="_blank" href="https://www.instagram.com/soscaramelosp/">
+                <img src="img-conteudo/instagram.png" alt="Instagram">
+            </a>
+        </div>
+
+        <div class="footer-col">
+            <h3>Entre em contato conosco</h3>
+            <div class="email">
+                <img src="img-conteudo/email.png" alt="Email">
+                <a href="mailto:ong.soscaramelo@gmail.com">ong.soscaramelo@gmail.com</a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h3>Menu</h3>
+            <nav class="menu-footer">
+                <ul>
+                    <li><a href="paginainicial.html">Home</a></li>
+                    <li><a href="pageventos.html">Eventos</a></li>
+                    <li><a href="pagvoluntario.html">Seja voluntário</a></li>
+                    <li><a href="pagadocao.html">Pets para adoção</a></li>
+                    <li><a href="pagcomofunciona.html">Pets adotados</a></li>
+                    <li><a href="pagcomofunciona.html">Como funciona a adoção</a></li>
+                    <li><a href="paganuncie.html">Anuncie</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025. Todos os direitos reservados.</p>
+        <div class="footer-links">
+            <a href="#">Termos & Condições</a>
+            <span>|</span>
+            <a href="#">Política de Privacidade</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
