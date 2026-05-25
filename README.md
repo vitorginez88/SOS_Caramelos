@@ -3,4 +3,3 @@ Meu primeiro projeto da faculdade, meu grupo escoheu uma ONG que resgata animais
 ### Ferramentas:    
 HTML    
 CSS    
-JavaScript
